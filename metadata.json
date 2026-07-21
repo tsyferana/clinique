@@ -1,0 +1,6 @@
+{
+  "name": "Clinique Médicale - Gestion RDV",
+  "description": "Plateforme complète de gestion des rendez-vous médicaux, consultations, file d'attente, ordonnances et tickets selon l'architecture MVC.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
