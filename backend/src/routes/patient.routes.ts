@@ -10,10 +10,11 @@ const router = Router();
 router.use(authenticateToken);
 
 router.get('/', requireRoles('STAFF', 'ADMIN', 'DOCTOR'), patientController.getAll);
-router.get('/:id', patientController.getById);
-router.put('/:id', requireRoles('STAFF', 'ADMIN', 'PATIENT'), patientController.update);
 
 router.get('/:patientId/consultations', consultationController.getPatientConsultations);
 router.get('/:patientId/prescriptions', prescriptionController.getPatientPrescriptions);
+
+router.get('/:id', patientController.getById);
+router.put('/:id', requireRoles('STAFF', 'ADMIN', 'PATIENT'), patientController.update);
 
 export default router;

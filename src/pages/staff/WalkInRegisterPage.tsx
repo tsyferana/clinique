@@ -229,7 +229,7 @@ export const WalkInRegisterPage: React.FC = () => {
               >
                 {services.map((s) => (
                   <option key={s.id} value={s.id}>
-                    {s.name} ({s.price} €)
+                    {s.name} ({s.price} MGA)
                   </option>
                 ))}
               </select>

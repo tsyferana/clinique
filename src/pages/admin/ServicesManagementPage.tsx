@@ -216,7 +216,7 @@ export const ServicesManagementPage: React.FC = () => {
                   <Clock className="w-3.5 h-3.5 text-purple-600" /> {s.durationMinutes} min
                 </span>
                 <span className="text-emerald-700 font-extrabold text-sm flex items-center gap-0.5">
-                  <Euro className="w-3.5 h-3.5" /> {s.price} €
+                  <Euro className="w-3.5 h-3.5" /> {s.price} MGA
                 </span>
               </div>
 
@@ -318,7 +318,7 @@ export const ServicesManagementPage: React.FC = () => {
 
                 <div>
                   <label className="block font-bold text-slate-700 uppercase tracking-wider mb-1">
-                    Tarif consultation (€)
+                    Tarif consultation (MGA)
                   </label>
                   <input
                     type="number"

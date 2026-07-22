@@ -217,7 +217,7 @@ export const BookAppointmentPage: React.FC = () => {
                   <p className="text-xs text-slate-500 mt-1 line-clamp-2">{srv.description}</p>
                   <div className="mt-3 flex justify-between items-center text-xs text-teal-700 font-semibold">
                     <span>{srv.durationMinutes} min</span>
-                    <span>Tarif: {srv.price} Ar</span>
+                    <span>Tarif: {srv.price} MGA</span>
                   </div>
                 </div>
               ))}

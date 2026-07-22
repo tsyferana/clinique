@@ -151,6 +151,50 @@ export const MedicalHistoryPage: React.FC = () => {
         )}
       </div>
 
+      {/* Past Prescriptions */}
+      <div className="space-y-4">
+        <h3 className="font-bold text-slate-900 text-base flex items-center gap-2">
+          <Pill className="w-5 h-5 text-teal-600" /> Vos Ordonnances ({prescriptions.length})
+        </h3>
+
+        {prescriptions.length === 0 ? (
+          <div className="bg-white p-8 text-center rounded-2xl border border-slate-200 text-slate-500 text-xs">
+            Aucune ordonnance émise à ce jour.
+          </div>
+        ) : (
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            {prescriptions.map((presc) => (
+              <div key={presc.id} className="bg-white p-5 rounded-2xl border border-slate-200/80 shadow-2xs space-y-3 flex flex-col justify-between">
+                <div>
+                  <div className="flex items-center justify-between gap-2 mb-2">
+                    <span className="px-3 py-1 bg-teal-50 text-teal-700 font-bold text-[10px] uppercase tracking-widest rounded-full">
+                      {presc.date}
+                    </span>
+                    <Pill className="w-4 h-4 text-slate-300" />
+                  </div>
+                  <h4 className="font-bold text-slate-900 text-sm">{presc.doctorName}</h4>
+                  <p className="text-xs text-slate-500">{presc.doctorSpecialty || 'Médecin'}</p>
+                  
+                  <div className="mt-3 text-xs text-slate-700 bg-slate-50 p-3 rounded-xl border border-slate-100">
+                    <span className="font-bold block mb-1">Diagnostic:</span>
+                    {presc.diagnosis}
+                  </div>
+                </div>
+
+                <div className="pt-3">
+                  <button
+                    onClick={() => openPrescriptionPDF(presc.id)}
+                    className="w-full px-3.5 py-2 bg-slate-900 hover:bg-teal-700 text-white font-semibold text-xs rounded-xl transition-colors flex items-center justify-center gap-1.5"
+                  >
+                    <Download className="w-3.5 h-3.5" /> Télécharger / Imprimer
+                  </button>
+                </div>
+              </div>
+            ))}
+          </div>
+        )}
+      </div>
+
       <PrescriptionPDFModal
         prescription={selectedPrescription}
         onClose={() => setSelectedPrescription(null)}
