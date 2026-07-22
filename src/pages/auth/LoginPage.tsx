@@ -59,7 +59,7 @@ export const LoginPage: React.FC = () => {
               <Stethoscope className="w-8 h-8" />
             </div>
             <div>
-              <h1 className="text-2xl font-extrabold tracking-tight text-white drop-shadow-md">Saint-Luc</h1>
+              <h1 className="text-2xl font-extrabold tracking-tight text-white drop-shadow-md">MAHERY</h1>
               <p className="text-sm font-semibold tracking-widest text-teal-400 uppercase">Clinique Digitale</p>
             </div>
           </div>
@@ -101,7 +101,7 @@ export const LoginPage: React.FC = () => {
              <div className="mx-auto w-16 h-16 rounded-2xl bg-gradient-to-br from-teal-400 to-teal-600 flex items-center justify-center text-white shadow-xl shadow-teal-900/50 mb-4">
               <Stethoscope className="w-10 h-10" />
             </div>
-            <h1 className="text-3xl font-extrabold tracking-tight text-white">Saint-Luc</h1>
+            <h1 className="text-3xl font-extrabold tracking-tight text-white">MAHERY</h1>
             <p className="text-sm font-semibold tracking-widest text-teal-400 uppercase mt-1">Clinique Digitale</p>
           </div>
 

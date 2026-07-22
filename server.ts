@@ -21,7 +21,7 @@ async function startServer() {
 
   // API Health Check
   app.get('/api/health', (_req, res) => {
-    res.json({ status: 'ok', service: 'Clinique Saint-Luc API', timestamp: new Date() });
+    res.json({ status: 'ok', service: 'Clinique Mahery API', timestamp: new Date() });
   });
 
   // REST API Routes

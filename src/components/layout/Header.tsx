@@ -22,7 +22,7 @@ export const Header: React.FC = () => {
 
   return (
     <header className="sticky top-0 z-40 w-full backdrop-blur-xl bg-slate-900/80 border-b border-slate-700/50 shadow-sm">
-      <div className="max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
+      <div className="w-full px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
         {/* Brand */}
         <div className="flex items-center gap-3 group cursor-pointer">
           <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-teal-400 to-teal-600 flex items-center justify-center text-white shadow-lg shadow-teal-900/40 transition-transform group-hover:scale-105">
@@ -30,7 +30,7 @@ export const Header: React.FC = () => {
           </div>
           <div>
             <h1 className="font-extrabold text-base sm:text-lg tracking-tight leading-none text-white drop-shadow-xs">
-              CLINIQUE SAINT-LUC
+              CLINIQUE MAHERY
             </h1>
             <p className="text-[11px] text-teal-300/80 font-medium tracking-wide">Plateforme Médicale</p>
           </div>

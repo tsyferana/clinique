@@ -18,7 +18,7 @@ export const PrescriptionPDFModal: React.FC<PrescriptionPDFModalProps> = ({ pres
   const handleDownloadPDF = () => {
     const doc = new jsPDF();
     doc.setFontSize(18);
-    doc.text('CLINIQUE MÉDICALE SAINT-LUC', 20, 20);
+    doc.text('CLINIQUE MAHERY', 20, 20);
     doc.setFontSize(10);
     doc.text('15 Boulevard de la Santé, 75013 Paris | Tél: 01 40 50 60 70', 20, 26);
 
@@ -73,7 +73,7 @@ export const PrescriptionPDFModal: React.FC<PrescriptionPDFModalProps> = ({ pres
         {/* Header */}
         <div className="bg-slate-900 text-white p-6 relative flex justify-between items-start print:bg-white print:text-black print:border-b">
           <div>
-            <h3 className="text-xl font-bold tracking-wide">CLINIQUE MÉDICALE SAINT-LUC</h3>
+            <h3 className="text-xl font-bold tracking-wide">CLINIQUE MAHERY</h3>
             <p className="text-xs text-slate-300 mt-1 print:text-slate-600">
               15 Boulevard de la Santé, 75013 Paris — Tél: 01 40 50 60 70
             </p>

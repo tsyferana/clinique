@@ -22,7 +22,7 @@ export const ticketView = {
       appointmentDate: apt.appointment_date,
       appointmentTime: apt.appointment_time,
       status: apt.status,
-      clinicName: 'CLINIQUE MÉDICALE SAINT-LUC',
+      clinicName: 'CLINIQUE MAHERY',
       clinicAddress: '15 Boulevard de la Santé, 75013 Paris',
       clinicPhone: '01 40 50 60 70',
     } as unknown as TicketDTO;

@@ -71,7 +71,7 @@ export const Sidebar: React.FC = () => {
   const links = getLinksForRole();
 
   return (
-    <aside className="w-64 bg-white/70 backdrop-blur-xl border border-white rounded-3xl min-h-[calc(100vh-4rem-3rem)] p-5 shrink-0 flex flex-col justify-between shadow-[0_8px_30px_rgb(0,0,0,0.04)] animate-slide-up">
+    <aside className="w-64 bg-white/70 backdrop-blur-xl border border-white rounded-3xl h-full overflow-y-auto p-5 shrink-0 flex flex-col justify-between shadow-[0_8px_30px_rgb(0,0,0,0.04)] animate-slide-up">
       <div className="space-y-6">
         <div>
           <p className="px-4 text-[10px] font-bold text-slate-400 uppercase tracking-widest mb-4">Espace {user.role}</p>
@@ -102,7 +102,7 @@ export const Sidebar: React.FC = () => {
       <div className="p-4 bg-gradient-to-br from-slate-100 to-slate-50 rounded-2xl border border-slate-200/60 text-xs text-slate-500 mt-6 hover-card">
         <p className="font-bold text-slate-700 tracking-tight">Support Technique</p>
         <p className="mt-1 font-medium">Tél: 01 40 50 60 70</p>
-        <p className="mt-2 text-[10px] text-teal-600 font-mono tracking-wider">CLINIQUE_ST_LUC_V2.4</p>
+        <p className="mt-2 text-[10px] text-teal-600 font-mono tracking-wider">CLINIQUE_MAHERY_V2.4</p>
       </div>
     </aside>
   );

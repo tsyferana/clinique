@@ -39,14 +39,14 @@ import { ServicesManagementPage } from './pages/admin/ServicesManagementPage.js'
 
 const AppLayout: React.FC = () => {
   return (
-    <div className="min-h-screen bg-slate-50 relative overflow-hidden flex flex-col font-sans text-slate-800 antialiased selection:bg-teal-200 selection:text-teal-900">
+    <div className="h-screen bg-slate-50 relative overflow-hidden flex flex-col font-sans text-slate-800 antialiased selection:bg-teal-200 selection:text-teal-900">
       {/* Decorative Background Elements */}
       <div className="absolute top-0 inset-x-0 h-96 bg-gradient-to-b from-teal-500/10 to-transparent pointer-events-none -z-10" />
       <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-teal-400/10 rounded-full blur-3xl pointer-events-none -z-10 transform translate-x-1/3 -translate-y-1/2" />
       <div className="absolute bottom-0 left-0 w-[600px] h-[600px] bg-blue-400/5 rounded-full blur-3xl pointer-events-none -z-10 transform -translate-x-1/3 translate-y-1/3" />
 
       <Header />
-      <div className="flex flex-1 max-w-[1400px] w-full mx-auto px-4 sm:px-6 lg:px-8 py-6 gap-6 relative z-0">
+      <div className="flex flex-1 w-full px-4 sm:px-6 lg:px-8 py-6 gap-6 relative z-0 overflow-hidden">
         <Sidebar />
         <main className="flex-1 overflow-y-auto rounded-3xl bg-white/60 backdrop-blur-xl border border-white shadow-[0_8px_30px_rgb(0,0,0,0.04)] p-6 sm:p-8 animate-fade-in">
           <Outlet />
